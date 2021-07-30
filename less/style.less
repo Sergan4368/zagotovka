@@ -1,0 +1,134 @@
+@import "smart-grid.less";
+@import "_mixins.less";
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 100%;
+  font-family: 'OpenSansRegular';
+}
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+
+a {
+  display: inline-block;
+  .trans();
+}
+button,button:hover,button:active{
+    outline: none;
+}
+
+button{
+    .trans();
+    border: none;
+  background-color: transparent;
+    &:hover{
+        cursor: pointer;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+p,
+a,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+section {
+  width: 100%;
+}
+.wrapper {
+    max-width: 1280px;
+    display: flex;
+  justify-content: space-between;
+  width: 100%;
+ .wrapper();
+}
+.wrapperBlock {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+   .smb({
+   padding-left: 10px;
+   padding-right: 10px;
+    });
+
+}
+.fag{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+
+}
